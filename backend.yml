@@ -1,0 +1,8 @@
+- name: Backend Setup
+  hosts: all
+  become: yes
+  tasks:
+    - name: Disable default NodeJS Version Module
+      community.general.dnf_config_manager:
+        name: nodejs
+        state: disable
