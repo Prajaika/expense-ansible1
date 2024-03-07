@@ -52,7 +52,7 @@
       community.mysql.mysql_db:
         state: import
         name: all
-        target: /tmp/dump/sql
+        target: /tmp/schema/backend.sql
         login_user: root
         login_password: ExpenseApp@1
         login_host: mysql-dev.prajaika.online
