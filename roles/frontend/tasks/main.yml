@@ -11,7 +11,7 @@
 
 - name: Import App Pre Requisites
   ansible.builtin.import_role:
-    path: common
+    name: common
     tasks_from: app-pre-req
 
 - name: Start Nginx

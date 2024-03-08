@@ -15,8 +15,8 @@
 
 - name: Import App Pre Requisites
   ansible.builtin.import_role:
-    path: common
-    tasks_from: app-pre-req
+     name: common
+     tasks_from: app-pre-req
 
 - name: Download NodeJS Ansible Module
   community.general.npm:
