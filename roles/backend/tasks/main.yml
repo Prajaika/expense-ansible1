@@ -13,10 +13,10 @@
   ansible.builtin.user:
     name: expense
 
-- name: Import app pre requisites
+- name: Import App Pre Requisites
   ansible.builtin.import_role:
     path: common
-    state: app-pre-req
+    tasks_from: app-pre-req
 
 - name: Download NodeJS Ansible Module
   community.general.npm:

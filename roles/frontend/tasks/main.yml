@@ -9,10 +9,10 @@
     src: expense.conf
     dest: /etc/nginx/default.d/expense.conf
 
-- name: Import app pre requisites
+- name: Import App Pre Requisites
   ansible.builtin.import_role:
     path: common
-    state: app-pre-req
+    tasks_from: app-pre-req
 
 - name: Start Nginx
   ansible.builtin.systemd_service:
