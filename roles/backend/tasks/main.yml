@@ -13,7 +13,7 @@
   ansible.builtin.user:
     name: expense
 
-- name: Import App Pre Requisites
+- name: Import app pre requisites
   ansible.builtin.import_role:
     path: common
     state: app-pre-req
