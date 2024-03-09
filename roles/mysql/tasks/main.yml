@@ -26,8 +26,8 @@
   register: mysql_connection-output
 
 - name: Print
-   - debug:
-         msg: "{{mysql_connection-output}}"
+  debug:
+    msg: "{{mysql_connection-output}}"
 
 
 - name: Setup MySQL Password
