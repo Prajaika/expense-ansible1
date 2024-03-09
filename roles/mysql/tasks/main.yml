@@ -23,11 +23,11 @@
     login_password: ExpenseApp@1
     login_host: mysql-dev.prajaika.online
     filter: version
-  register: mysql_connection-output
+  register: mysql_connection_output
 
 - name: Print
   debug:
-    msg: "{{mysql_connection-output}}"
+    msg: "{{mysql_connection_output}}"
 
 
 - name: Setup MySQL Password
