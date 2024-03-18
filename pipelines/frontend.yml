@@ -22,7 +22,6 @@ pipelines:
                         - frontend
                       command: bash #bash ansible.sh frontend
                       run_if: passed
-
         - QA:
             fetch_materials: true
             approval:
@@ -36,7 +35,6 @@ pipelines:
                         - frontend
                       command: bash #bash ansible.sh frontend
                       run_if: passed
-
         - STAGE:
             fetch_materials: true
             approval:
@@ -50,7 +48,6 @@ pipelines:
                         - frontend
                       command: bash #bash ansible.sh frontend
                       run_if: passed
-
         - PROD:
             fetch_materials: true
             approval:
@@ -64,4 +61,3 @@ pipelines:
                         - frontend
                       command: bash #bash ansible.sh frontend
                       run_if: passed
-
