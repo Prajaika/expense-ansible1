@@ -20,7 +20,7 @@ pipelines:
                       arguments:
                         - ansible.sh
                         - frontend
-                      command: bash #bash ansible.sh frontend
+                      command: bash #bash ansible1.sh frontend
                       run_if: passed
 
         - QA:
@@ -34,7 +34,7 @@ pipelines:
                       arguments:
                         - ansible.sh
                         - frontend
-                      command: bash #bash ansible.sh frontend
+                      command: bash #bash ansible1.sh frontend
                       run_if: passed
 
         - STAGE:
@@ -48,7 +48,7 @@ pipelines:
                       arguments:
                         - ansible.sh
                         - frontend
-                      command: bash #bash ansible.sh frontend
+                      command: bash #bash ansible1.sh frontend
                       run_if: passed
 
         - PROD:
@@ -62,6 +62,6 @@ pipelines:
                       arguments:
                         - ansible.sh
                         - frontend
-                      command: bash #bash ansible.sh frontend
+                      command: bash #bash ansible1.sh frontend
                       run_if: passed
 
