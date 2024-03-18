@@ -4,7 +4,7 @@ pipelines:
     group: defaultGroup
     materials:
       git-da613e5:
-        git: https://github.com/raghudevopsb78/expense-ansible.git
+        git: https://github.com/Prajaika/expense-ansible1.git
         shallow_clone: false
         auto_update: true
         branch: main
