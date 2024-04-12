@@ -7,10 +7,10 @@ input {
 output {
     elasticsearch {
         hosts => "https://elk-internal.Prajaika.online:9200"
-        user => {{ elasticsearch_user }}
-        password => {{ elasticsearch_password }}
+        user => "{{ elasticsearch_user }}"
+        password => "{{ elasticsearch_password }}"
         ssl_verification_mode => "none"
-        index => {{component}}-%{+YYYY.MM.dd}
+        index => "{{component}}-%{+YYYY.MM.dd}"
     }
 }
 
